@@ -48,7 +48,7 @@ const router = createHashRouter([
         loader: async () => fetchReportData("draft2020-12"),
       },
       {
-        path: "/:draftName",
+        path: "/dialects/:draftName",
         Component: ReportDataHandler,
         loader: async ({ params }) => fetchReportData(params.draftName),
       },
