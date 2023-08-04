@@ -14,7 +14,6 @@ const reportUrl =
   import.meta.env.MODE === "development"
     ? "https://bowtie.report"
     : import.meta.env.BASE_URL;
-const titleTag = document.getElementsByTagName("title")[0];
 const dialectToName = {
   "draft2020-12": "Draft 2020-12",
   "draft2019-09": "Draft 2019-09",
@@ -26,7 +25,7 @@ const dialectToName = {
 
 const fetchReportData = async (dialect) => {
   const dialectName = dialectToName[dialect] ?? dialect;
-  titleTag.textContent = `Bowtie - ${dialectName}`;
+  document.title = `Bowtie - ${dialectName}`;
   const response = await fetch(`${reportUrl}/${dialect}.json`);
   const jsonl = await response.text();
   const lines = jsonl
