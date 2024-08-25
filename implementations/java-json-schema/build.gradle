@@ -18,7 +18,7 @@ repositories {
 def harnessImplementation = [
         group: 'dev.harrel',
         name: 'json-schema',
-        version: '1.7.0'
+        version: project.hasProperty('implementationVersion') ? project.implementationVersion : '1.7.0'
 ]
 def jsonProvider = [
         group: 'com.fasterxml.jackson.core',
@@ -28,7 +28,7 @@ def jsonProvider = [
 
 dependencies {
     /* Verbose dependency notation for dependabot */
-    implementation harnessImplementation
+    implementation "$harnessImplementation.group:$harnessImplementation.name:$harnessImplementation.version"
     implementation "$jsonProvider.group:$jsonProvider.name:$jsonProvider.version"
 }
 
