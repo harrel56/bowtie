@@ -28,7 +28,7 @@ def jsonProvider = [
 
 dependencies {
     /* Verbose dependency notation for dependabot */
-    implementation "$harnessImplementation.group:$harnessImplementation.name:$harnessImplementation.version"
+    implementation harnessImplementation
     implementation "$jsonProvider.group:$jsonProvider.name:$jsonProvider.version"
 }
 
