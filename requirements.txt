@@ -2,7 +2,7 @@
 #    uv pip compile --no-cache --output-file /Users/julian/Development/bowtie/requirements.txt pyproject.toml
 aiodocker==0.24.0
     # via bowtie-json-schema (pyproject.toml)
-aiohappyeyeballs==2.4.4
+aiohappyeyeballs==2.4.6
     # via aiohttp
 aiohttp==3.11.11
     # via aiodocker
@@ -10,13 +10,13 @@ aiosignal==1.3.2
     # via aiohttp
 anyio==4.8.0
     # via httpx
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   bowtie-json-schema (pyproject.toml)
     #   aiohttp
     #   jsonschema
     #   referencing
-certifi==2024.12.14
+certifi==2025.1.31
     # via
     #   httpcore
     #   httpx
@@ -27,7 +27,7 @@ charset-normalizer==3.4.1
     # via requests
 click==8.1.8
     # via rich-click
-cryptography==44.0.0
+cryptography==44.0.1
     # via pyjwt
 diagnostic==2.1.0
     # via bowtie-json-schema (pyproject.toml)
@@ -75,7 +75,7 @@ propcache==0.2.1
     # via
     #   aiohttp
     #   yarl
-psutil==6.1.1
+psutil==7.0.0
     # via pyperf
 pycparser==2.22
     # via cffi
@@ -89,7 +89,7 @@ pyperf==2.8.1
     # via bowtie-json-schema (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via github3-py
-referencing==0.36.1
+referencing==0.36.2
     # via
     #   bowtie-json-schema (pyproject.toml)
     #   jsonschema
@@ -117,7 +117,7 @@ sniffio==1.3.1
     # via anyio
 structlog==25.1.0
     # via bowtie-json-schema (pyproject.toml)
-typeguard==4.4.1
+typeguard==4.4.2
     # via inflect
 typing-extensions==4.12.2
     # via
